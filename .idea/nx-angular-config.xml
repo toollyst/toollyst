@@ -3,6 +3,7 @@
   <component name="NxAngularConfigService" workspaceLocation="file://$PROJECT_DIR$/nx.json">
     <projects>
       <project name="archiver" file="file://$PROJECT_DIR$/apps/archiver/project.json" />
+      <project name="ui" file="file://$PROJECT_DIR$/lib/ui/project.json" />
     </projects>
   </component>
 </project>

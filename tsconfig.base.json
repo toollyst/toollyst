@@ -29,6 +29,10 @@
     "sourceMap": false,
     "strict": true,
     "target": "es2022",
-    "verbatimModuleSyntax": false
+    "verbatimModuleSyntax": false,
+    "paths": {
+      "@toollyst/ui": ["./libs/ui/src/index.ts"],
+      "@toollyst/ui/*": ["./libs/ui/src/*"]
+    }
   }
 }

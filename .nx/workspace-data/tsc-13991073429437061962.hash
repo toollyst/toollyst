@@ -202,5 +202,4230 @@
         }
       }
     }
+  },
+  "6468597178080233371_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "1984835271187282555_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "2576804651242407904_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "18026689620209502199_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "2565221407747342438_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "3975816680351196852_libs/ui/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "1654508760764352809_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "12235543121565963287_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "10313223692782309147_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "1182537421966529760_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "15924579455505185896_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "15935753552758772835_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "16595959215793884370_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "2710405839728492615_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "12030679482658375138_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "5390501011833021687_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "14745929765095632630_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "9907316446716443068_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "6789050384208534834_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "16813139202840418101_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "12103259575995878881_libs/ui/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "17115612624448183732_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "6006787794753955522_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "10080518424295584034_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "8683503940748265153_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "8068578611027866187_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "6267146274187859913_libs/ui/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "12516547877901930700_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "12312728094190526184_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "10066957537022484364_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "6309133892796256991_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "7492856023023477004_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "14101362034972550115_libs/ui/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "12464088558906166185_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "17741288492180991487_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "18244287386362220128_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "7493939943742726548_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "666395592220989049_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "5154527730580626415_libs/ui/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "13618698100691076618_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "17253293040727070947_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "3688334515574315630_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "16249076491828020962_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "11646813504680831427_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "10708329376709762991_libs/ui/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "2629397246808817353_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "18000949909828702091_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "16622005049685611346_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "1003147338425656700_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "3753034824034704768_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "13083699257176627165_libs/ui/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "10500220974739321865_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "13864469421613030428_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "12185030734483997870_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "16712916335108252103_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "4544105853869181038_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "2137494854595073474_libs/ui/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "13829926328119180639_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.tsbuildinfo",
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "13771588717411414400_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{projectRoot}/**/*.js",
+          "{projectRoot}/**/*.cjs",
+          "{projectRoot}/**/*.mjs",
+          "{projectRoot}/**/*.jsx",
+          "{projectRoot}/**/*.js.map",
+          "{projectRoot}/**/*.jsx.map",
+          "{projectRoot}/**/*.d.ts",
+          "{projectRoot}/**/*.d.cts",
+          "{projectRoot}/**/*.d.mts",
+          "{projectRoot}/**/*.d.ts.map",
+          "{projectRoot}/**/*.d.cts.map",
+          "{projectRoot}/**/*.d.mts.map",
+          "{projectRoot}/tsconfig.lib.tsbuildinfo"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "17343555405339162882_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "14290585489592957368_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "14184686061225809787_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "12310447913975263052_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "17245821370667994365_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "10038574816770285377_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "10047534055756289237_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "10484882543278249287_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "6528835683455265145_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "14428187380287320534_libs/ui/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "12264964851096511736_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "3583769615356789867_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "17517570904129122641_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "12973640844386980086_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "10408941418419951708_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "1627756907203754273_libs/ui/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "13399355337546354698_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "6417463730329823116_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "13821516115133153536_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "9110608045668852750_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "2747952805245690912_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "12652499373491251329_libs/ui/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "17858344289668364999_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "10384966920200445599_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "13022647001840346981_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "8881653634400142525_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "10296324984017529224_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "12284572769687129293_libs/ui/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "9855058836265126694_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "13542060733866731909_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "11997605526653051002_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "10037311802705514262_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "16461265361945900374_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "17088781138447542826_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "6925097130366080126_lib/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "lib/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "15195568475563996257_lib/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "lib/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "7223244810514599401_lib/ui/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "2713473916601516520_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "773260385308437540_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "16524864197684196869_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "12803688710574404265_lib/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "lib/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "13742539098449129415_lib/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "lib/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "17350277883457477526_lib/ui/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "10197691917811976670_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "16640949145687732693_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "10983095283212218470_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "9140582595565902097_lib/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "lib/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "16613319933038215262_lib/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "lib/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "5642922110339182535_lib/ui/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "16208309505208266713_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "4949831785988732368_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "17657485853548669540_apps/archiver/tsconfig.app.json": {
+    "targets": {}
+  },
+  "2751843137665332324_apps/archiver/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "apps/archiver"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.app.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "10830761926392369235_apps/archiver/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "11765496041454900308_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "7026711760499570_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "11744716670584617861_libs/ui/tsconfig.spec.json": {
+    "targets": {}
+  },
+  "1324518767690468731_libs/ui/tsconfig.json": {
+    "targets": {
+      "typecheck": {
+        "dependsOn": [
+          "^typecheck"
+        ],
+        "command": "tsc --build --emitDeclarationOnly --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/tsconfig.spec.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "{projectRoot}/vite.config.ts",
+          "{projectRoot}/vite.config.mts",
+          "{projectRoot}/vitest.config.ts",
+          "{projectRoot}/vitest.config.mts",
+          "{projectRoot}/src/**/*.test.ts",
+          "{projectRoot}/src/**/*.spec.ts",
+          "{projectRoot}/src/**/*.test.tsx",
+          "{projectRoot}/src/**/*.spec.tsx",
+          "{projectRoot}/src/**/*.test.js",
+          "{projectRoot}/src/**/*.spec.js",
+          "{projectRoot}/src/**/*.test.jsx",
+          "{projectRoot}/src/**/*.spec.jsx",
+          "{projectRoot}/src/**/*.d.ts",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Runs type-checking for the project.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "2789516076112356779_libs/ui/tsconfig.lib.json": {
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "command": "tsc --build tsconfig.lib.json --pretty --verbose",
+        "options": {
+          "cwd": "libs/ui"
+        },
+        "cache": true,
+        "inputs": [
+          "{projectRoot}/tsconfig.json",
+          "{workspaceRoot}/tsconfig.base.json",
+          "{projectRoot}/tsconfig.lib.json",
+          "{projectRoot}/src/**/*.js",
+          "{projectRoot}/src/**/*.jsx",
+          "{projectRoot}/src/**/*.ts",
+          "{projectRoot}/src/**/*.tsx",
+          "!{projectRoot}/**/*.spec.ts",
+          "!{projectRoot}/**/*.test.ts",
+          "!{projectRoot}/**/*.spec.tsx",
+          "!{projectRoot}/**/*.test.tsx",
+          "!{projectRoot}/**/*.spec.js",
+          "!{projectRoot}/**/*.test.js",
+          "!{projectRoot}/**/*.spec.jsx",
+          "!{projectRoot}/**/*.test.jsx",
+          "!{projectRoot}/vite.config.ts",
+          "!{projectRoot}/vite.config.mts",
+          "!{projectRoot}/vitest.config.ts",
+          "!{projectRoot}/vitest.config.mts",
+          "!{projectRoot}/src/**/*.test.ts",
+          "!{projectRoot}/src/**/*.spec.ts",
+          "!{projectRoot}/src/**/*.test.tsx",
+          "!{projectRoot}/src/**/*.spec.tsx",
+          "!{projectRoot}/src/**/*.test.js",
+          "!{projectRoot}/src/**/*.spec.js",
+          "!{projectRoot}/src/**/*.test.jsx",
+          "!{projectRoot}/src/**/*.spec.jsx",
+          "^production",
+          {
+            "externalDependencies": [
+              "typescript"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/dist/out-tsc"
+        ],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ],
+        "metadata": {
+          "technologies": [
+            "typescript"
+          ],
+          "description": "Builds the project with `tsc`.",
+          "help": {
+            "command": "pnpm exec tsc --build --help",
+            "example": {
+              "args": [
+                "--force"
+              ]
+            }
+          }
+        }
+      }
+    }
   }
 }
