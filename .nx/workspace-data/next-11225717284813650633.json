@@ -148,5 +148,455 @@
         "spa": false
       }
     }
+  },
+  "477124581412888649": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/archiver",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/archiver/.next",
+        "{workspaceRoot}/apps/archiver/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/archiver"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/archiver"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "6812844438675166206": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/archiver",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/archiver/.next",
+        "{workspaceRoot}/apps/archiver/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/archiver"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/archiver"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "3291025659135311903": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/archiver",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/archiver/.next",
+        "{workspaceRoot}/apps/archiver/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/archiver"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/archiver"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "10443982210826896413": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/archiver",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/archiver/.next",
+        "{workspaceRoot}/apps/archiver/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/archiver"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/archiver"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "2749201880486322226": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/archiver",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/archiver/.next",
+        "{workspaceRoot}/apps/archiver/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/archiver"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/archiver"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "6343300748542452124": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/archiver",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/archiver/.next",
+        "{workspaceRoot}/apps/archiver/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/archiver"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/archiver"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "690702029657236170": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/archiver",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/archiver/.next",
+        "{workspaceRoot}/apps/archiver/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/archiver"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/archiver"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "12470252018221787164": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/archiver",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/archiver/.next",
+        "{workspaceRoot}/apps/archiver/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/archiver"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/archiver"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
+  },
+  "16678278714868719692": {
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "apps/archiver",
+        "tty": false
+      },
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "next"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/archiver/.next",
+        "{workspaceRoot}/apps/archiver/.next/!(cache)"
+      ]
+    },
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "apps/archiver"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "apps/archiver"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build",
+        "staticFilePath": "{projectRoot}/out",
+        "port": 3000,
+        "spa": false
+      }
+    }
   }
 }

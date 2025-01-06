@@ -16,15 +16,6 @@
       }
     },
     {
-      "name": "@nx/next/plugin",
-      "options": {
-        "startTargetName": "start",
-        "buildTargetName": "build",
-        "devTargetName": "dev",
-        "serveStaticTargetName": "serve-static"
-      }
-    },
-    {
       "name": "@nx/jest/plugin",
       "options": {
         "targetName": "test"
@@ -35,13 +26,95 @@
       "options": {
         "targetName": "lint"
       }
+    },
+    {
+      "name": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck"
+      }
     }
   ],
   "fileMap": {
+    "projectFileMap": {
+      "archiver": [
+        {
+          "file": "apps/archiver/eslint.config.cjs",
+          "hash": "11822094462587282167",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "apps/archiver/index.html",
+          "hash": "17816494428562691189"
+        },
+        {
+          "file": "apps/archiver/postcss.config.js",
+          "hash": "2759402739052110475"
+        },
+        {
+          "file": "apps/archiver/project.json",
+          "hash": "8212900188992409434"
+        },
+        {
+          "file": "apps/archiver/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/archiver/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/archiver/src/main.tsx",
+          "hash": "7950103102519819588",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/archiver/src/styles.css",
+          "hash": "9540575453073076294"
+        },
+        {
+          "file": "apps/archiver/tailwind.config.js",
+          "hash": "9530210127227690419",
+          "deps": [
+            "npm:@nx/react"
+          ]
+        },
+        {
+          "file": "apps/archiver/tsconfig.app.json",
+          "hash": "3374933587361460334"
+        },
+        {
+          "file": "apps/archiver/tsconfig.json",
+          "hash": "11166545116916107487"
+        },
+        {
+          "file": "apps/archiver/tsconfig.spec.json",
+          "hash": "2374680567064402239"
+        },
+        {
+          "file": "apps/archiver/vite.config.ts",
+          "hash": "12040994855751677465",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ]
+    },
     "nonProjectFiles": [
       {
         "file": ".gitignore",
-        "hash": "4050574484239134640"
+        "hash": "17267274312416239973"
       },
       {
         "file": ".idea/.gitignore",
@@ -65,7 +138,7 @@
       },
       {
         "file": ".idea/vcs.xml",
-        "hash": "13310645357652710998"
+        "hash": "14600148892634157659"
       },
       {
         "file": ".npmrc",
@@ -105,23 +178,15 @@
       },
       {
         "file": "nx.json",
-        "hash": "12692721803090861892"
+        "hash": "14430397182819592696"
       },
       {
         "file": "package.json",
-        "hash": "10428580668526501759"
-      },
-      {
-        "file": "packages/.gitkeep",
-        "hash": "3244421341483603138"
+        "hash": "16064529614633908460"
       },
       {
         "file": "pnpm-lock.yaml",
-        "hash": "10270082608685793503"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "48283447660858173"
+        "hash": "7585048738945032477"
       },
       {
         "file": "tsconfig.base.json",
@@ -130,84 +195,11 @@
       {
         "file": "tsconfig.json",
         "hash": "1379983966652230747"
+      },
+      {
+        "file": "vitest.workspace.ts",
+        "hash": "14023491222425291751"
       }
-    ],
-    "projectFileMap": {
-      "archiver": [
-        {
-          "file": "apps/archiver/eslint.config.cjs",
-          "hash": "3058025270249315262",
-          "deps": [
-            "npm:@eslint/eslintrc",
-            "npm:@eslint/js",
-            "npm:@eslint/compat",
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "apps/archiver/index.d.ts",
-          "hash": "5498222895072842432"
-        },
-        {
-          "file": "apps/archiver/jest.config.ts",
-          "hash": "3103644706679373099"
-        },
-        {
-          "file": "apps/archiver/next-env.d.ts",
-          "hash": "13904763933831424769"
-        },
-        {
-          "file": "apps/archiver/next.config.js",
-          "hash": "4640182932892698362",
-          "deps": [
-            "npm:@nx/next"
-          ]
-        },
-        {
-          "file": "apps/archiver/project.json",
-          "hash": "16212765157500214675"
-        },
-        {
-          "file": "apps/archiver/public/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/archiver/public/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "apps/archiver/specs/index.spec.tsx",
-          "hash": "2873936096691223229",
-          "deps": [
-            "npm:react",
-            "npm:@testing-library/react"
-          ]
-        },
-        {
-          "file": "apps/archiver/src/app/api/hello/route.ts",
-          "hash": "495073956729887886"
-        },
-        {
-          "file": "apps/archiver/src/app/global.css",
-          "hash": "2063387531564215811"
-        },
-        {
-          "file": "apps/archiver/src/app/layout.tsx",
-          "hash": "10818014769198296619"
-        },
-        {
-          "file": "apps/archiver/src/app/page.tsx",
-          "hash": "10091689656999465822"
-        },
-        {
-          "file": "apps/archiver/tsconfig.json",
-          "hash": "13705317887611933307"
-        },
-        {
-          "file": "apps/archiver/tsconfig.spec.json",
-          "hash": "13752930008724566565"
-        }
-      ]
-    }
+    ]
   }
 }

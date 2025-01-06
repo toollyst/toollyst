@@ -1,0 +1,9 @@
+{
+  "run": {
+    "command": "nx run-many -t dev --projects=archiver",
+    "startTime": "2025-01-06T15:30:18.072Z",
+    "endTime": "2025-01-06T15:30:18.081Z",
+    "inner": false
+  },
+  "tasks": []
+}
