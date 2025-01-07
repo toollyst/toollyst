@@ -33,7 +33,7 @@ export default defineConfig({
     },
     lib: {
       // Could also be a dictionary or array of multiple entry points.
-      entry: 'src/index.ts',
+      entry: 'src/main.ts',
       name: 'ui',
       fileName: 'index',
       // Change this to the formats you want to support.
