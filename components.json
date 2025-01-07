@@ -2,14 +2,16 @@
   "$schema": "https://ui.shadcn.com/schema.json",
   "style": "new-york",
   "rsc": false,
+  "tsx": true,
   "tailwind": {
-    "config": "./tailwind.config.js",
-    "css": "libs/ui/src/styles.css",
-    "baseColor": "stone",
+    "config": "libs/ui/tailwind.config.js",
+    "css": "libs/ui/src/styles/global.css",
+    "baseColor": "slate",
     "cssVariables": true
   },
   "aliases": {
-    "components": "@toollyst/ui/components",
-    "utils": "@toollyst/ui/lib"
+    "components": "@toollyst/ui",
+    "ui": "@toollyst/ui",
+    "utils": "@toollyst/utils"
   }
 }
